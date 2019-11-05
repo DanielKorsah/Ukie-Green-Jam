@@ -36,6 +36,21 @@ public class Scroller : MonoBehaviour
 
             backgroundstuff = backgroundstuff.OrderBy(t => t.transform.position.x).ToList();
 
+            SpriteRenderer first = backgroundstuff.FirstOrDefault();
+
+            Vector3 firstpos = first.transform.position;
+            Vector3 firstsize = (first.bounds.max - first.bounds.min);
+
+            SpriteRenderer childstart = backgroundstuff.LastOrDefault();
+
+            childstart.transform.position = new Vector3(firstpos.x + firstsize.x,   childstart.transform.position.y, childstart.transform.position.z);
+
+            backgroundstuff.Remove(childstart);
+
+            SpriteRenderer childBegin = backgroundstuff.LastOrDefault();
+
+            childBegin.transform.position = new Vector3(firstpos.x + firstsize.x + firstsize.x,   childstart.transform.position.y, childstart.transform.position.z);
+
         }
     }
 
