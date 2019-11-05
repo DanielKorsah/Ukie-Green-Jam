@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
+
+    public GameObject seed; 
     Rigidbody2D playerBody;
 
     [SerializeField]
@@ -20,5 +22,17 @@ public class CharacterController : MonoBehaviour
             playerBody.AddForce(new Vector3(0, power, 0));
             Debug.Log(Input.GetAxis("Jump") + ", velocity: " + playerBody.velocity);
         }
+
+        if(Input.GetButton("Fire1"))
+        {
+            Fire();
+        }
     }
+
+    void Fire()
+    {
+         Instantiate(seed, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
+    }
+
+
 }
