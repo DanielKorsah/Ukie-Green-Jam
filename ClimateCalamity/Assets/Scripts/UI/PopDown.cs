@@ -7,7 +7,7 @@ public class PopDown : MonoBehaviour
     RectTransform rt;
     Vector3 downPos = new Vector3(0, 0, 0);
     Vector3 upPos = new Vector3(0, 1080, 0);
-    bool isDown;
+    public bool isDown;
 
 
 
@@ -18,38 +18,16 @@ public class PopDown : MonoBehaviour
         SetUp();
     }
 
-    void Update()
-    {
-
-
-        //toggle panel up or down with Esc key
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (!isDown)
-            {
-                SetDown();
-            }
-            else
-            {
-                SetUp();
-            }
-
-        }
-    }
-
     public void SetDown()
     {
         rt.localPosition = downPos;
         isDown = true;
-        Cursor.visible = true;
-        Time.timeScale = 0;
     }
 
     public void SetUp()
     {
         rt.localPosition = upPos;
         isDown = false;
-        Cursor.visible = false;
-        Time.timeScale = 1;
+
     }
 }
