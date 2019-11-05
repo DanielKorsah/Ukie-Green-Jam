@@ -11,6 +11,8 @@ public class CharacterController : MonoBehaviour
     [SerializeField]
     private float power = 30;
 
+    private bool canFire = true;
+
     private void Start()
     {
         playerBody = gameObject.GetComponent<Rigidbody2D>();
@@ -23,7 +25,7 @@ public class CharacterController : MonoBehaviour
             Debug.Log(Input.GetAxis("Jump") + ", velocity: " + playerBody.velocity);
         }
 
-        if(Input.GetButton("Fire1"))
+        if(Input.GetButton("Fire1") && canFire == true)
         {
             Fire();
         }
@@ -32,6 +34,14 @@ public class CharacterController : MonoBehaviour
     void Fire()
     {
          Instantiate(seed, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
+         StartCoroutine(Wait());
+    }
+
+    IEnumerator Wait()
+    {
+        canFire = false;
+        yield return new WaitForSeconds(5);
+        canFire = true;
     }
 
 
