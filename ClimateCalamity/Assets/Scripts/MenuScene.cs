@@ -8,7 +8,7 @@ public class MenuScene : MonoBehaviour {
 
     if(Input.anyKey)
     {
-        SceneManager.LoadScene("Alfie");
+        SceneManager.LoadScene("Integration Testing");
     }
 
     for (int i = 0;i < 20; i++) {
