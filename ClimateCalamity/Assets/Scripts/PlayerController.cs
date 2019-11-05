@@ -2,10 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
 
+    SeedScript seedscript;
+
+    GameObject seedtext;
+
     public GameObject seed; 
+
+    [SerializeField]
+    private float waitTime = 2;
     Rigidbody2D playerBody;
 
     [SerializeField]
@@ -16,6 +23,12 @@ public class CharacterController : MonoBehaviour
     private void Start()
     {
         playerBody = gameObject.GetComponent<Rigidbody2D>();
+        seedtext = GameObject.Find("SeedText");
+        if(seedtext != null)
+        {
+            seedscript = GameObject.Find("SeedText").GetComponent<SeedScript>();
+            seedscript.showSeedText = true;
+        }
     }
     void Update()
     {
@@ -25,7 +38,7 @@ public class CharacterController : MonoBehaviour
             Debug.Log(Input.GetAxis("Jump") + ", velocity: " + playerBody.velocity);
         }
 
-        if(Input.GetButton("Fire1") && canFire == true)
+        if(Input.GetKeyDown(KeyCode.Return) && canFire == true)
         {
             Fire();
         }
@@ -39,9 +52,11 @@ public class CharacterController : MonoBehaviour
 
     IEnumerator Wait()
     {
+        seedscript.showSeedText = false;
         canFire = false;
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(waitTime);
         canFire = true;
+        seedscript.showSeedText = true;
     }
 
 
