@@ -4768,7 +4768,7 @@ GameObject:
   - component: {fileID: 8880775342607553949}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4848,6 +4848,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d479c22ab6d8acc42bb4f75ebc2e71a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  seed: {fileID: 0}
+  waitTime: 2
   power: 40
 --- !u!114 &8880775342607553949
 MonoBehaviour:
