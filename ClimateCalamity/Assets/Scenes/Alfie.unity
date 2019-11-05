@@ -453,7 +453,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5108d71c3aec4e5498d62f2c63c0d4a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 9017667442802975223, guid: 1729c913ae4cdbf40bfb1a57c0e6a1ae, type: 3}
+  enemy1: {fileID: 9017667442802975223, guid: 1729c913ae4cdbf40bfb1a57c0e6a1ae, type: 3}
+  enemy2: {fileID: 4478370391997412735, guid: e20b1f1bb1b227d4ebb969a4e45348cf, type: 3}
 --- !u!4 &266727779
 Transform:
   m_ObjectHideFlags: 0
@@ -562,6 +563,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlainsBack
+      objectReference: {fileID: 0}
+    - target: {fileID: 2926341780515476952, guid: a26b8b8ee7dfc3b45a75f086fb27551d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2926341780515476957, guid: a26b8b8ee7dfc3b45a75f086fb27551d,
         type: 3}

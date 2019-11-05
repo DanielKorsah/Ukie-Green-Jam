@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class RandomEnemySpawner : MonoBehaviour
 {
-    public GameObject enemy;
+    public GameObject enemy1;
+    public GameObject enemy2;
     float randY;
     float randT;
 
@@ -24,20 +25,19 @@ public class RandomEnemySpawner : MonoBehaviour
 
         if (Time.time > nextSpawn)
         {
-            enemyType = Random.Range(0,1);
-            if (enemyType == 0)
+            enemyType = Random.Range(0,3);
+            randT = Random.Range(1, 5);
+            if (enemyType == 0 || enemyType == 1)
             {
-                randT = Random.Range(1, 9);
                 randY = Random.Range(-4, 4);
                 whereToSpawn = new Vector2(20, randY);
+                Instantiate(enemy1, whereToSpawn, Quaternion.identity);
             }
-            else if (enemyType == 1)
+            else if (enemyType == 2)
             {
-                randT = Random.Range(1, 1);
-                randY = Random.Range(-4, 4);
-                whereToSpawn = new Vector2(20, randY);
+                whereToSpawn = new Vector2(20, -0.7f);
+                Instantiate(enemy2, whereToSpawn, Quaternion.identity);
             }
-            Instantiate(enemy, whereToSpawn, Quaternion.identity);
             nextSpawn = Time.time + randT;
         }
     }

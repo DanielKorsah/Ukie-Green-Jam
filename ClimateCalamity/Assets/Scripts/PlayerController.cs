@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
 
     void Fire()
     {
-         Instantiate(seed, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
+         Instantiate(seed, new Vector2(transform.position.x, transform.position.y - 0.5f), Quaternion.identity);
          StartCoroutine(Wait());
     }
 
