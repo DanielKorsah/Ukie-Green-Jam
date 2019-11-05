@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetAxis("Jump") > 0)
         {
             playerBody.AddForce(new Vector3(0, power, 0));
-            Debug.Log(Input.GetAxis("Jump") + ", velocity: " + playerBody.velocity);
+            //Debug.Log(Input.GetAxis("Jump") + ", velocity: " + playerBody.velocity);
         }
 
         if(Input.GetKeyDown(KeyCode.Return) && canFire == true)
