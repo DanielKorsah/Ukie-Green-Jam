@@ -28,18 +28,17 @@ public class RandomEnemySpawner : MonoBehaviour
             if (enemyType == 0)
             {
                 randT = Random.Range(1, 9);
-                whereToSpawn = new Vector2(9, 0);
+                randY = Random.Range(-4, 4);
+                whereToSpawn = new Vector2(20, randY);
             }
-
             else if (enemyType == 1)
             {
                 randT = Random.Range(1, 1);
-                randY = Random.Range(1, 1);
-                whereToSpawn = new Vector2(9, randY);
+                randY = Random.Range(-4, 4);
+                whereToSpawn = new Vector2(20, randY);
             }
             Instantiate(enemy, whereToSpawn, Quaternion.identity);
             nextSpawn = Time.time + randT;
         }
-
     }
 }
