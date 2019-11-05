@@ -599,12 +599,37 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 8880775342477141313, guid: 140b7439afea59044a7c0165d13ef4a0,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8880775342477141313, guid: 140b7439afea59044a7c0165d13ef4a0,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.5660378
+      objectReference: {fileID: 0}
+    - target: {fileID: 8880775342477141313, guid: 140b7439afea59044a7c0165d13ef4a0,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.34976864
+      objectReference: {fileID: 0}
+    - target: {fileID: 8880775342477141313, guid: 140b7439afea59044a7c0165d13ef4a0,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.34976864
+      objectReference: {fileID: 0}
     - target: {fileID: 8880775342723141358, guid: 140b7439afea59044a7c0165d13ef4a0,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: d7af7ebf50a679449bb2e11ab8e84c4e,
         type: 3}
+    - target: {fileID: 8880775342723141358, guid: 140b7439afea59044a7c0165d13ef4a0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 140b7439afea59044a7c0165d13ef4a0, type: 3}
 --- !u!1001 &1462068891
