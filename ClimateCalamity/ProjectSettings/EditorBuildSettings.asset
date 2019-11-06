@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Alfie.unity
     guid: c1fccf5d0244c27449ae1595ae8069f0
+  - enabled: 1
+    path: Assets/Scenes/End Screen.unity
+    guid: 9917669892c5abc4cae7aefbc51b9208
   m_configObjects: {}
