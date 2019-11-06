@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5880d09f1490a6545b90880c7faa5a81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelLength: 10
+  levelLength: 100
 --- !u!1 &5962032338198153880
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,22 +347,22 @@ PrefabInstance:
     - target: {fileID: 7704802958657996021, guid: 91a42c2fc10441245a510d7f90f1a002,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 7704802958657996021, guid: 91a42c2fc10441245a510d7f90f1a002,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1080
+      value: 615
       objectReference: {fileID: 0}
     - target: {fileID: 7704802958657996021, guid: 91a42c2fc10441245a510d7f90f1a002,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 1920
       objectReference: {fileID: 0}
     - target: {fileID: 7704802958657996021, guid: 91a42c2fc10441245a510d7f90f1a002,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 7704802958657996021, guid: 91a42c2fc10441245a510d7f90f1a002,
         type: 3}
@@ -372,12 +372,12 @@ PrefabInstance:
     - target: {fileID: 7704802958657996021, guid: 91a42c2fc10441245a510d7f90f1a002,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7704802958657996021, guid: 91a42c2fc10441245a510d7f90f1a002,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7704802958657996021, guid: 91a42c2fc10441245a510d7f90f1a002,
         type: 3}
@@ -394,6 +394,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7704802960166416048, guid: 91a42c2fc10441245a510d7f90f1a002,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 413
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91a42c2fc10441245a510d7f90f1a002, type: 3}
 --- !u!224 &5962032337676098017 stripped
@@ -409,11 +414,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5962032338198153884}
     m_Modifications:
-    - target: {fileID: 4504713073398087296, guid: 39113009c577bf942ad1d271db4aab01,
-        type: 3}
-      propertyPath: m_Name
-      value: HPText
-      objectReference: {fileID: 0}
     - target: {fileID: 4504713073398087297, guid: 39113009c577bf942ad1d271db4aab01,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -534,6 +534,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3.0643
       objectReference: {fileID: 0}
+    - target: {fileID: 4504713073398087296, guid: 39113009c577bf942ad1d271db4aab01,
+        type: 3}
+      propertyPath: m_Name
+      value: HPText
+      objectReference: {fileID: 0}
+    - target: {fileID: 4504713073398087303, guid: 39113009c577bf942ad1d271db4aab01,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39113009c577bf942ad1d271db4aab01, type: 3}
 --- !u!224 &5962032337070340954 stripped
@@ -549,11 +559,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5962032338198153884}
     m_Modifications:
-    - target: {fileID: 3039209580999538726, guid: 827ce80570a05b8429a5808ca5fcb731,
-        type: 3}
-      propertyPath: m_Name
-      value: ScoreText
-      objectReference: {fileID: 0}
     - target: {fileID: 3039209580999538725, guid: 827ce80570a05b8429a5808ca5fcb731,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -673,6 +678,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 3.0643
+      objectReference: {fileID: 0}
+    - target: {fileID: 3039209580999538726, guid: 827ce80570a05b8429a5808ca5fcb731,
+        type: 3}
+      propertyPath: m_Name
+      value: ScoreText
+      objectReference: {fileID: 0}
+    - target: {fileID: 3039209580999538723, guid: 827ce80570a05b8429a5808ca5fcb731,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 827ce80570a05b8429a5808ca5fcb731, type: 3}
