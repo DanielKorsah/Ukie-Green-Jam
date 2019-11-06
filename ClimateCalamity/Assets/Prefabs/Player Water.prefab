@@ -294,6 +294,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6070399024676105827, guid: 140b7439afea59044a7c0165d13ef4a0,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1058778597410734413, guid: 140b7439afea59044a7c0165d13ef4a0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Suck
+      objectReference: {fileID: 0}
     - target: {fileID: 8880775342607553936, guid: 140b7439afea59044a7c0165d13ef4a0,
         type: 3}
       propertyPath: m_Name
@@ -374,6 +384,11 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 8880775342607553937, guid: 140b7439afea59044a7c0165d13ef4a0,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8880775342607553948, guid: 140b7439afea59044a7c0165d13ef4a0,
         type: 3}
       propertyPath: power
@@ -419,6 +434,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8880775342723141345, guid: 140b7439afea59044a7c0165d13ef4a0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8880775342477141313, guid: 140b7439afea59044a7c0165d13ef4a0,
         type: 3}
