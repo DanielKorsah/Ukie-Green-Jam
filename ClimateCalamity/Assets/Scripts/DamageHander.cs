@@ -25,7 +25,6 @@ public class DamageHander : MonoBehaviour
 
         if (PlayerHealth <= 0)
         {
-            Destroy(gameObject);
             StartCoroutine(CrashWait());
         }
     }
@@ -33,6 +32,7 @@ public class DamageHander : MonoBehaviour
     IEnumerator CrashWait()
     {
          crashSound.PlayOneShot(crash, 0.1f);
+        Destroy(gameObject);
          yield return new WaitForSeconds(2);
         SceneManager.LoadScene("End Screen");
     }
