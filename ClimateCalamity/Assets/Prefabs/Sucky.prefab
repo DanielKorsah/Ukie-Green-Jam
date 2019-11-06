@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4674356353526535894}
   - component: {fileID: 3890462912850324163}
+  - component: {fileID: 3738830101574177538}
   m_Layer: 0
   m_Name: Sucky
   m_TagString: Untagged
@@ -62,3 +63,22 @@ PolygonCollider2D:
       - {x: 0.09913884, y: -3.858073}
       - {x: 1.8032408, y: -3.9076047}
       - {x: 0.8060948, y: -0.42997575}
+--- !u!95 &3738830101574177538
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8977789600629822921}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: af9547af6be919f449fb92fddce8d215, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
