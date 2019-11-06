@@ -7,11 +7,12 @@ public class PauseInterface : MonoBehaviour
 {
     [SerializeField]
     GameObject pausePanel;
-    PopDown popDown;
+    PopDown pausePopDown;
+    
 
     private void Start()
     {
-        popDown = pausePanel.GetComponent<PopDown>();
+        pausePopDown = pausePanel.GetComponent<PopDown>();
     }
 
     private void Update()
@@ -19,7 +20,7 @@ public class PauseInterface : MonoBehaviour
         //toggle panel up or down with Esc key
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (!popDown.isDown)
+            if (!pausePopDown.isDown)
             {
                 Pause();
             }
@@ -33,21 +34,21 @@ public class PauseInterface : MonoBehaviour
 
     public void Pause()
     {
-        popDown.SetDown();
+        pausePopDown.SetDown();
         Cursor.visible = true;
         Time.timeScale = 0;
     }
 
     public void Unpause()
     {
-        popDown.SetUp();
+        pausePopDown.SetUp();
         Cursor.visible = false;
         Time.timeScale = 1;
     }
 
     public void ToMenu()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Start");
     }
 
     public void QuitGame()
