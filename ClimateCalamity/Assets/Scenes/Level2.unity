@@ -126,6 +126,22 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5067272786334675640}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &124819073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124819072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4dd0dbd67fc95845840b312456b1c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objspawn: {fileID: 1389422553}
+  Boss: {fileID: 2314700837605616298, guid: d815ef19f591a2747b644f8681fbaa48, type: 3}
+  level: 1
+  inFight: 0
 --- !u!82 &124819074 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 1360918286, guid: 658679a2c93cc0c4198923554230e829,
@@ -803,8 +819,13 @@ PrefabInstance:
     - target: {fileID: 5962032337569566755, guid: 239ce33c677150c49a66219249b471df,
         type: 3}
       propertyPath: levelLength
-      value: 100
+      value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5962032337569566755, guid: 239ce33c677150c49a66219249b471df,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 124819072}
     - target: {fileID: 5962032338249184167, guid: 239ce33c677150c49a66219249b471df,
         type: 3}
       propertyPath: m_textInfo.characterCount
