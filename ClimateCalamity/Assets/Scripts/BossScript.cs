@@ -17,20 +17,22 @@ public class BossScript : MonoBehaviour
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector3(0, -1, 0);
+        rb.velocity = new Vector3(0, -2, 0);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.y < -2)
+        if(transform.position.y < -3.5)
         {
-            rb.velocity = new Vector3(0, 1, 0);
+           // transform.Translate(new Vector3(5, transform.position.y, transform.position.z));
+            rb.velocity = new Vector3(0, 2, 0);
         }
 
-        if(transform.position.y > 2)
+        if(transform.position.y > 3.5)
         {
-            rb.velocity = new Vector3(0, -1, 0);
+         //   transform.Translate(new Vector3(5, transform.position.y, transform.position.z));
+            rb.velocity = new Vector3(0, -2, 0);
         }
 
        if(Time.time > nextspawn)

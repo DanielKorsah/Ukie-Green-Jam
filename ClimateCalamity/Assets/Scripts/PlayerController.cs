@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
 
     private bool canFire = true;
 
+    public float whatlevel = 0;
+
     private void Start()
     {
         playerBody = gameObject.GetComponent<Rigidbody2D>();
@@ -38,9 +40,13 @@ public class PlayerController : MonoBehaviour
             //Debug.Log(Input.GetAxis("Jump") + ", velocity: " + playerBody.velocity);
         }
 
+        if(whatlevel == 0)
+        {
+
         if(Input.GetKeyDown(KeyCode.Return) && canFire == true)
         {
             Fire();
+        }
         }
     }
 
