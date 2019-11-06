@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1655655166245660819}
   m_Layer: 0
   m_Name: Derrick
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -598,6 +598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4478370391997412734}
   - component: {fileID: 2228002298163242043}
+  - component: {fileID: 282579346184930992}
   m_Layer: 0
   m_Name: Derrick
   m_TagString: Untagged
@@ -636,3 +637,16 @@ MonoBehaviour:
   direction: {x: -1, y: 0}
   cameraLink: 0
   loop: 0
+--- !u!114 &282579346184930992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4478370391997412735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed2c4a8082f1cd4e9ec96bde91cf0de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 10

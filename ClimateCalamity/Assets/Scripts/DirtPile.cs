@@ -18,10 +18,8 @@ public class DirtPile : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("Before: " + collider.gameObject.tag);
         if(collider.gameObject.tag == "Seed")
         {
-            Debug.Log("SEED ENTERED");
             scorescript.ScoreValue += 5;
             Destroy(collider.gameObject);
 
