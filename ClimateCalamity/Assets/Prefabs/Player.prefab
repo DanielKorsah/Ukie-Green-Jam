@@ -4863,7 +4863,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dfdd6b99e10af04db3fee619a28ce20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerHealth: 10
+  ScreenRed: {fileID: 0}
+  PlayerHealth: 100
+  crashSound: {fileID: 0}
+  crash: {fileID: 8300000, guid: cfc2b2547fe5b094791388ab28d288c3, type: 3}
 --- !u!1 &8880775342723141344
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class DamageHander : MonoBehaviour
 {
 
+    RedScreen isScreen;
+
+    public GameObject ScreenRed;
+
     public int PlayerHealth = 100;
 
     public AudioSource crashSound;
@@ -14,8 +18,9 @@ public class DamageHander : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Obstacle")
-        {
+        {         
             PlayerHealth -= other.gameObject.GetComponent<Enemy>().Damage;
+            ScreenRed.GetComponent<RedScreen>().damageTaken = true;
         }
     }
 
