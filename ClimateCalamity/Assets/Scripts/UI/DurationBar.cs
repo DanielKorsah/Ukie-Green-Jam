@@ -7,10 +7,13 @@ using UnityEngine.SceneManagement;
 public class DurationBar : MonoBehaviour
 {
 
+    public GameObject Player;
 
     [SerializeField]
     private float levelLength;
     private Image bar;
+
+    private bool fight = true;
 
     private void Start()
     {
@@ -24,7 +27,18 @@ public class DurationBar : MonoBehaviour
 
         if (percentageComplete >= 1)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            InFight();
+        }
+    }
+
+    void InFight()
+    {
+        if(fight)
+        {
+            Debug.Log("Fight Started");
+        Player.GetComponent<BossSpawn>().inFight = true;
+        fight = false;
         }
     }
 }

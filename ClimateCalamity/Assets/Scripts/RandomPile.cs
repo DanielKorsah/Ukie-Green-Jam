@@ -27,7 +27,7 @@ public class RandomPile : MonoBehaviour
 
             if(chancetospawn == 0)
             {
-                Instantiate(pile, new Vector2(20, 0), Quaternion.identity);
+                Instantiate(pile, new Vector2(20, -3), Quaternion.identity);
             }
             nextSpawn = Time.time + randtime;
         }

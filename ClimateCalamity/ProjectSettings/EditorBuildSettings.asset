@@ -6,15 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Master.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
     path: Assets/Scenes/Start.unity
     guid: fc45a66417b9a294ba1490c321ed4847
   - enabled: 1
-    path: Assets/Scenes/Dan.unity
-    guid: 058f992f1919cde4bbaede6db363cf41
+    path: Assets/Scenes/Alfie.unity
+    guid: c1fccf5d0244c27449ae1595ae8069f0
   - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 8889300360e9ec949aa9f667be395a31
+  - enabled: 0
     path: Assets/Scenes/Menu.unity
     guid: 49e24ac8f9e768f47b08d33e7135b144
-  - enabled: 0
-    path: Assets/Scenes/Master.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
