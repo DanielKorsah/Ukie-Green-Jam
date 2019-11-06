@@ -22,11 +22,11 @@ public class SuckScript : MonoBehaviour
     // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.tag == "Trash")
+        if(col.gameObject.tag == "Suck")
         {
             Debug.Log("Trash Entered");
             scorescript.ScoreValue += 5;
-            Destroy(col.gameObject);
+            Destroy(gameObject);
         }
     }
 }
