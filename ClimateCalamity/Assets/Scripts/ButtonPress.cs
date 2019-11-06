@@ -5,8 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class ButtonPress : MonoBehaviour {
 
-	public void PlayGameClicked()
+	public void PlayLevel1Clicked()
     {
-        SceneManager.LoadScene("Integration Testing");
+        SceneManager.LoadScene("Alfie");
+    }
+    public void PlayLevel2Clicked()
+    {
+        SceneManager.LoadScene("Level2");
     }
 }
