@@ -7,6 +7,6 @@ public class ButtonPress : MonoBehaviour {
 
 	public void PlayGameClicked()
     {
-        SceneManager.LoadScene("Integration Testing");
+        SceneManager.LoadScene("Alfie");
     }
 }

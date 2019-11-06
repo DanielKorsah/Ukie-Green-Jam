@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DamageHander : MonoBehaviour
 {
 
     public int PlayerHealth = 100;
 
+    public AudioSource crashSound;
+    public AudioClip crash;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -21,7 +24,14 @@ public class DamageHander : MonoBehaviour
     {
         if (PlayerHealth <= 0)
         {
-            Destroy(gameObject);
+            StartCoroutine(CrashWait());
         }
+    }
+
+    IEnumerator CrashWait()
+    {
+         crashSound.PlayOneShot(crash, 0.1f);
+         yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("End Screen");
     }
 }
