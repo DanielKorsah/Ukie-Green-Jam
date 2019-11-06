@@ -93,14 +93,4 @@ public class PlayerController : MonoBehaviour
         canSuck = true;
         }
     }
-
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        if(col.gameObject.tag == "Trash")
-        {
-            Debug.Log("Trash Destroy");
-            Destroy(col);
-        }
-    }
-
 }
